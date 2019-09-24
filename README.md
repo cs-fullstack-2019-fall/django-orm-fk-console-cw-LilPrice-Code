@@ -23,4 +23,24 @@ From the shell copy the commands your entered in the shell to create the instanc
 ============================
 
 Copy the shell commands you used here!
+>>> a1 = Author(first_name = "John", last_name = "White")
+
+>>>> a1.save()
+>
+>>> p1 = Post(title = "My People", content = "100 Pages", author = a1)
+>
+>>> p1.save()
+>
+>>> p2 = Post(title = "Sleep", content = "152 Pages", author = a1)
+>
+>>> p2.save()
+>
+>>> p3 = Post(title = "Happy Song", content = "20 Pages", author = a1)
+>
+>>> p3.save()
+>
+>>>> a1.post_set.all()
+>
+>QuerySet [<Post: Post object (1)>, <Post: Post object (2)>, <Post: Post object (3)>]>
+
 
